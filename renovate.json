@@ -1,0 +1,38 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "description": "Basic Renovate configuration for Nykredit",
+    "extends": [
+        "config:best-practices"
+    ],
+    "packageRules": [
+      {
+        "description": "https://hibernate.org/validator/releases/6.2/",
+        "matchPackageNames": [
+          "org.hibernate:hibernate-validator",
+          "org.hibernate.validator:hibernate-validator"
+        ],
+        "allowedVersions": "<=6"
+      },
+      {
+        "description": "https://hibernate.org/orm/releases/5.6/",
+        "matchPackageNames": [
+          "org.hibernate:hibernate-entitymanager"
+        ],
+        "allowedVersions": "<=5"
+      },
+      {
+        "description": "https://hibernate.org/orm/releases/5.6/",
+        "matchPackageNames": [
+          "org.hibernate:hibernate-core"
+        ],
+        "allowedVersions": "<=5"
+      },
+      {
+        "description": "https://hibernate.org/orm/releases/5.6/",
+        "matchPackageNames": [
+          "org.hibernate:hibernate-jpamodelgen"
+        ],
+        "allowedVersions": "<=5"
+      }
+    ]
+}
